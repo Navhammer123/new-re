@@ -13,8 +13,8 @@ public class Googlepage {
 	public static void main(String[] args) {
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("headless");
-		//WebDriver driver = new ChromeDriver();
-		//driver.manage().window().maximize();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		//Actions actions = new Actions (driver);
 		//driver.get("https://demo.opencart.com/");
 		//WebElement srcbox = driver.findElement(By.name("SEARCH"));
@@ -38,9 +38,12 @@ public class Googlepage {
 		//	close.click();
 		//}
 		
+		driver.get("https://www.google.com/");
 		
-		
-//		System.out.println("page title .." + driver.getTitle());
+         System.out.println("page title .." + driver.getTitle());
+         
+         driver.findElement(By.id("APjFqb")).sendKeys("new");
+         
 		//System.out.println ("new url :" + driver.getCurrentUrl());
        //WebElement search = driver.findElement(By.id("APjFqb"));
 		//WebElement search = driver.findElement(By.className("gLFyf"));

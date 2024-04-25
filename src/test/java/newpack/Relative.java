@@ -12,7 +12,6 @@ public class Relative {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://automationbookstore.dev/");
-		String Book = driver.findElement(with(By.tagName("li").toLeftof(By.id("pid6").get
 
 	}
 
